@@ -1,0 +1,24 @@
+[debug] [2025-01-01T15:59:22.464Z] ----------------------------------------------------------------------
+[debug] [2025-01-01T15:59:22.466Z] Command:       /usr/local/bin/firebase /Users/parthivdungarani/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase apps:create ios karkhana_app (macos) --bundle-id=com.sparkflows.karkhana_app --json --project=sparkkarkhana
+[debug] [2025-01-01T15:59:22.466Z] CLI Version:   13.29.0
+[debug] [2025-01-01T15:59:22.466Z] Platform:      darwin
+[debug] [2025-01-01T15:59:22.466Z] Node Version:  v18.5.0
+[debug] [2025-01-01T15:59:22.467Z] Time:          Wed Jan 01 2025 21:29:22 GMT+0530 (India Standard Time)
+[debug] [2025-01-01T15:59:22.468Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-01T15:59:22.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-01T15:59:22.477Z] > authorizing via signed-in user (info.sparkflows@gmail.com)
+[info] Create your IOS app in project sparkkarkhana:
+[debug] [2025-01-01T15:59:22.481Z] Checked if tokens are valid: true, expires at: 1735748829905
+[debug] [2025-01-01T15:59:22.482Z] Checked if tokens are valid: true, expires at: 1735748829905
+[debug] [2025-01-01T15:59:22.483Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps [none]
+[debug] [2025-01-01T15:59:22.484Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps {"displayName":"karkhana_app (macos)","bundleId":"com.sparkflows.karkhana_app"}
+[debug] [2025-01-01T15:59:22.826Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps 400
+[debug] [2025-01-01T15:59:22.829Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2025-01-01T15:59:22.830Z] Request to https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps had HTTP Error: 400, Request contains an invalid argument.
+[debug] [2025-01-01T15:59:23.127Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/sparkkarkhana/iosApps had HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (/Users/parthivdungarani/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/Users/parthivdungarani/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create iOS app for project sparkkarkhana. See firebase-debug.log for more info.
