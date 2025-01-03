@@ -58,8 +58,6 @@ class LanguageView extends StatelessWidget {
                           Utility.updateLanguage(
                             Locale(element.languageCode),
                           );
-                          Utility.setUpdatelanguage(element.languageCode);
-
                           controller.update();
                         },
                         title: Center(

@@ -16,6 +16,7 @@ import 'package:http/http.dart' as http;
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:intl/intl.dart';
 import 'package:karkhana_app/app/app.dart';
+import 'package:karkhana_app/app/navigators/navigators.dart';
 import 'package:karkhana_app/domain/models/response_model.dart';
 import 'package:karkhana_app/domain/repositories/local_storage_keys.dart';
 import 'package:karkhana_app/domain/repositories/repository.dart';
@@ -1240,14 +1241,11 @@ abstract class Utility {
     }
   }
 
-  static Future<void> setUpdatelanguage(value) async {
-    Get.find<Repository>().saveValue(LocalKeys.language, value);
-  }
+  static updateLanguage(Locale locale) async {
+    Get.find<Repository>().saveValue(LocalKeys.language, locale);
 
-  static updateLanguage(Locale locale) {
-    // RouteManagement.goToBottomBarView();
+    RouteManagement.goToBottomBarView();
     Get.updateLocale(locale);
-    Get.forceAppUpdate();
   }
 }
 

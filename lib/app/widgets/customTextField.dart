@@ -130,7 +130,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 ),
               )
             : const SizedBox.shrink(),
-        (widget.isShowTitle ?? false) ? Dimens.boxHeight4 : Dimens.boxHeight0,
+        (widget.isShowTitle ?? false) ? Dimens.boxHeight6 : Dimens.boxHeight0,
         Padding(
           padding: widget.padding ?? EdgeInsets.zero,
           child: TextFormField(

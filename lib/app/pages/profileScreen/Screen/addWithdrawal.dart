@@ -54,7 +54,12 @@ class AddWithdrawalScreen extends StatelessWidget {
                           ),
                           keyboardType: TextInputType.number,
                           controller: controller.withdrawalAmount,
-                          validator: (value) => "error_withdrawal_amount".tr,
+                          validator: (value) {
+                            if (value != null && value.isEmpty) {
+                              return "error_withdrawal_amount".tr;
+                            }
+                            return null;
+                          },
                         ),
                         Dimens.boxHeight20,
                         CustomButton(
